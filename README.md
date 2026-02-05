@@ -6,7 +6,7 @@ This tool was created to provide a professional solution for validating large me
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 * **🔍 Recursive Deep Scan**: Automatically explores subdirectories and network shares (NAS/SMB).
 * **⚡ CUDA Hardware Acceleration**: Optimized for NVIDIA GPUs to process files at 40x-80x real-time speed.
@@ -26,3 +26,12 @@ This tool was created to provide a professional solution for validating large me
 Install the required Python libraries:
 ```bash
 pip install psutil nvidia-ml-py static-ffmpeg
+```
+## Installation & Usage
+Setup: Save the script with a .pyw extension to ensure a console-free execution.
+
+Select Path: Choose the root folder or network drive containing the files you wish to validate.
+
+Configure Hardware: Toggle the CUDA Acceleration checkbox to offload decoding to your NVIDIA GPU.
+
+Run: Monitor the log area for real-time status. Valid files receive a ✅ while corrupt files are flagged with a ❌.
