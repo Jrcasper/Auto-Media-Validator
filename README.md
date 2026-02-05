@@ -1,2 +1,28 @@
-# Auto-Media-Validator
-Auto Media Validator is a high-performance, automated tool designed to verify the binary integrity of large media libraries. It solves the problem of "bit rot" and silent file corruption by performing deep recursive scans of local and network directories (NAS/SMB), identifying files that are physically present but internally damaged.
+# Auto Media Validator 🚀
+
+**Auto Media Validator** is a high-performance, open-source tool designed for the mass recursive integrity verification of media files. By leveraging the **FFmpeg** engine and **NVIDIA CUDA Hardware Acceleration**, it detects stream corruptions, bit errors, and damaged headers at exceptional speeds.
+
+This tool was created to provide a professional solution for validating large media libraries, especially those recovered from failing storage systems or network shares.
+
+---
+
+## ✨ Key Features
+
+* **🔍 Recursive Deep Scan**: Automatically explores subdirectories and network shares (NAS/SMB).
+* **⚡ CUDA Hardware Acceleration**: Optimized for NVIDIA GPUs to process files at 40x-80x real-time speed.
+* **📊 Live Performance Monitoring**:
+    * **CPU Usage**: Real-time tracking of processor load.
+    * **GPU Load & DEC**: Dedicated tracking for GPU processing and Video Decoder (NVDEC) engines.
+    * **Processing Speed**: Live x-ratio speed metrics.
+* **⏯️ Full Process Control**: Pause, Resume, and Stop functionality with safe process termination.
+* **🌓 Adaptive UI**: Includes Dark/Light modes and bilingual support (English/Spanish).
+* **🔕 Silent Operation**: Runs as a windowed application (`.pyw`), suppressing intrusive command prompts.
+
+---
+
+## 🛠 Prerequisites
+
+### Dependencies
+Install the required Python libraries:
+```bash
+pip install psutil nvidia-ml-py static-ffmpeg
